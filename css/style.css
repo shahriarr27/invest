@@ -242,10 +242,12 @@ div#float-hidden {
 .top-section{
     overflow: auto;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin: 40px 0px 30px;
 }
 .P-left{
     overflow: auto;
@@ -261,15 +263,14 @@ div#float-hidden {
     border-radius: 50%;
 }
 .user-name{
-    font-size: 36px;
+    font-size: 32px;
     line-height: 42px;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 500;
 }
 button.P-btn-1 {
     background-color: #302F3F;
-    width: 150px;
-    height: 40px;
+    width: 120px;
+    height: 30px;
     color: #fff;
     border: 0px;
     border-radius: 99px;
@@ -307,10 +308,6 @@ button.P-Right-btn {
     margin-right: 10px;
 }
 
-.inner-body{
-    display: flex;
-    box-sizing: border-box;
-}
 /* -- sidebar -- */
 #sidebar {
     background: #242529;
@@ -336,240 +333,155 @@ div#sidebar p img {
     background: #FF8E00;
 }
 
-/* Section 70 */
-#section70{
-    width: 70%;
-    margin-left: 30px;
-}
-.wallet{
-    display: flex;
-    background-image: url(../images/dashboard/Group\ 18304.png);
+.user-level{
+    background-image: url(../images/dashboard/big-bg.png);
     background-position: center;
     background-size: cover;
-    justify-content: space-between;
     border-radius: 10px;
+    padding: 25px 40px;
+    position: relative;
+    height: 100%;
 }
-.wallet-left {
-    width: 40%;
-    padding-top: 50px;
-    padding-left: 66px;
-    padding-bottom: 50px;
-    box-sizing: border-box;
-    
+.user-level .level-info{
+    margin-top: 30px;
 }
-.wallet-left h2 {
-    font-size: 35px;
-    line-height: 41px;
-    font-weight: 400;
-    font-style: italic;
+.level-info h3{
+    font-size: 15px;
+    margin-bottom:20px;
 }
-.wallet-left h3 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 25px;
+.level-info h2{
+    font-size: 28px;
 }
-button.withdra-btn {
-    width: 195px;
-    height: 46px;
-    background-color: #FF8E00;
-    color: #fff;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
-    border: 0px;
-    border-radius: 23px;
-    margin-left: 50px;
-    margin-top: -30px;
-    margin-bottom: 50px;
+.user-badge{
+    text-align: right;
 }
-button.withdra-btn img {
-    margin-right: 10px;
-    margin-top: -6px;
-}
-.wallet-middle{
-    width: 40%;
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 150px;
-}
-button.WM-btn {
-    width: 80px;
-    height: 30px;
-    background-color: #242529;
-    opacity: 0.45;
-    color: #fff;
-    border: 0px;
-    border-radius: 5px;
-    margin-left: 20px;
-}
-.wallet-middle p {
-    font-size: 8px;
-    line-height: 10.8px;
-    font-weight: 450;
-    margin-bottom: 0px;
-}
-.wallet-middle h3 {
-    font-size: 20px;
-    line-height: 23px;
-    font-weight: 400;
-    font-style: italic;
-    margin: 0px;
-}
-button.WM-btn img {
-    margin-right: 5px;
-    margin-top: -2px;
-}
-
-.wallet-right{
-    width: 20%;
-    box-sizing: border-box;
-    text-align: end;
-    padding-right: 30px;
-    padding-top: 10px;
+.level-right{
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 /* -- Machine Profit ( tow column ) -- */
 .machin-profit{
-    overflow-x: hidden;
+    height: 100%;
 }
-
 
 .M-active {
-    background-image: url(../images/dashboard/Group\ 18304-1.png);
+    background-image: url(../images/dashboard/single-line.png);
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    width: 46%;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-top: 45px;
-    float: left;
+    height: 100%;
 }
-.MP-item-1 {
-    display: flex;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 20px;
+.MP-item{
+    padding: 40px 30px 10px;
 }
-.MP-item-1 img {
-    margin-right: 20px;
+.MP-item .item-top{
+    margin-bottom: 20px;
 }
-.MP-item-1 h3 {
+.MP-item .item-top p{
     font-size: 15px;
-    line-height: 25px;
     font-weight: 500;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
-.MP-item-1 h2 {
-    font-size: 25px;
-    line-height: 53px;
-    font-style: italic;
+.MP-item .item-top h4{
     color: #ff8e00;
-    font-weight: 400;
-    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: 700;
 }
-.MP-item-2 {
-    padding-right: 20px;
-    padding-top: 10px;
+.MP-item .item-bottom p{
+    margin-bottom: 5px;
+}
+.MP-item .item-bottom .title{
+    color: #ff8e00;
+    font-size: 15px;
+    font-weight: 500;
+}
+.MP-item .item-bottom .level-info{
+    font-size: 18px;
+    font-weight: 500;
+}
+.MP-item img {
+    width: 50px;
 }
 
-
-.C-profit {
-    background-image: url(../images/dashboard/Group\ 18304-2.png);
+.small-cards .M-active {
+    background-image: url(../images/dashboard/small-bg.png);
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    width: 46%;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-top: 45px;
-    float: left;
-    margin-left: 45px;
-}
-.CP-item-1 {
+    height: 100%;
     display: flex;
     align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 20px;
+    justify-content: center;
 }
-.CP-item-1 img {
-    margin-right: 20px;
+.small-cards .MP-item h2{
+    font-size: 32px;
+    margin-bottom: 5px;
 }
-.CP-item-1 h3 {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 500;
-    margin-bottom: 0px;
-}
-.CP-item-1 h2 {
-    font-size: 25px;
-    line-height: 53px;
-    font-style: italic;
+.small-cards .MP-item .count-inc{
+    font-size: 60px;
     color: #ff8e00;
-    font-weight: 400;
-    margin-bottom: 0px;
-}
-.CP-item-2 {
-    padding-right: 20px;
-    padding-top: 10px;
+    font-weight: 700;
 }
 
-/* Product-min */
-.product-min {
-    background-color: #2E2F34;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-bottom: 70px;
-    overflow-x: hidden;
-    padding-bottom: 20px;    
+.inactive-meaning{
+    margin:30px 0px;
 }
-.your-machine h1{
-    margin-top: 45px;
+.inactive-meaning h2{
     font-size: 24px;
-    line-height: 30px;
-    font-weight: 500;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
-.product-min-1{
-    background-color: #44454a;
-    padding: 10px;
-    border-radius: 10px;
-    float: left;
-    width: 48%;
-    margin: 20px 0px 0px 10px;
-}
-.PM-item-1{
-    float: left;
+
+.icon-heading{
     display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
 }
-.PM-item-1 h5 {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17.7px;
-    margin-bottom: 0px;
-}
-.PM-item-1 span {
-    font-size: 8px;
-    font-weight: 500;
-    color: #fff;
-    line-height: 10.12px;
-}
-.PM-item-1 p {
-    font-size: 8px;
-    font-weight: 500;
-    line-height: 10.12px;
-    margin-bottom: 10px;
-}
-.PM-item-1 img {
-    margin-right: 15px;
+.icon-heading img{
+    width: 50px;
 }
 
+.dark-bg{
+    background: #1f1e21;
+}
+.bonus{
+    margin: 40px 0px;
+}
+.bonus-card{
+    padding: 20px;
+    border-radius: 10px;
+}
+.bonus-card img{
+    width: 60px;
+}
+.bonus-card .small{
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.bonus-card .bonus-amount{
+    color: #ff8e00;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+.bonus-history{
+    margin: 40px 0px;
+}
 
+@media screen and (max-width: 768px){
+    .referral-link .referral-link-inner{
+        flex-wrap: wrap;
+    }
+    .referral-link h3, .referral-link .link-box{
+        width: 100% !important;
+    }
+}
 /* Dashboard page mobile */
 
 nav.navbar.navbar-db.navbar-expand-lg {
@@ -671,7 +583,7 @@ span{
     padding: 0% 15%;
 }
 
-#login-page, #register-page, #withdraw, #payment-method, #transaction{
+#login-page, #register-page, #withdraw, #payment-method, #transaction, #dashboard{
     background: url(../images/dashboard-bg.png), #141213;
     
     background-position: center;
@@ -1337,28 +1249,6 @@ ul.nav.nav-tabs {
 /* Dashboard page mobile quries */
 
 @media only screen and (max-width: 500px){
-    .top-section {
-        display: none;
-    }
-    a.navbar-brand.nb-db {
-        display: none;
-    }
-    div#sidebar {
-        display: none;
-    }
-    .d-topbar{
-        display: flex;
-    }
-    .navigation{
-        display: block;
-        white-space: nowrap;
-        overflow-x: auto;
-        padding: 0;
-        max-width: calc(100% - 50px);
-        margin: auto;
-        margin-bottom: 10px;
-    }
-
     nav.navbar.navbar-db.navbar-expand-lg {
         display: block;
     }
@@ -1367,126 +1257,11 @@ ul.nav.nav-tabs {
         width: 100%;
         margin-left: 0px;
     }
-    .wallet-left {
-        width: 100%;
-        padding-top: 50px;
-        padding-left: 15px;
-        padding-bottom: 0px;
-    }
-    .wallet-middle {
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 70px;
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 15px;
-    }
-
-    button.withdra-btn {
-        margin-left: 15px;
-    }
-
     .M-active{
         margin-top: 25px;
         justify-content: center;
     }
-    .MP-item-1 {
-        display: inline;
-        padding-top: 40px;
-        text-align: center;
-        padding-bottom: 20px;
-        padding-left: 20px;
-    }
-    .MP-item-1 h3 {
-        font-size: 18px;
-        line-height: 25.3px;
-        font-weight: 500;
-        margin-top: 20px;
-    }
-    .MP-item-1 h2 {
-        font-size: 24px;
-        line-height: 28.37px;
-        font-weight: 400;
-        margin-top: 10px;
-    }
-    .CP-item-1 img,
-    .MP-item-1 img {
-        margin-right: 0px;
-        max-width: 70px;
-    }
-    .CP-item-2,
-    .MP-item-2 {
-        padding-right: 0px;
-        padding-top: 0px;
-    }
-    .C-profit {
-        justify-content: center;
-        margin-top: 25px;
-        margin-left: 15px;
-        width: 49%;
-    }
 
-    .CP-item-1 {
-        display: inline;
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 20px;
-        padding-left: 10px;
-    }
-    .CP-item-1 h3 {
-        font-size: 18px;
-        line-height: 25.3px;
-        font-weight: 500;
-        margin-top: 20px;
-    }
-    .CP-item-1 h2 {
-        font-size: 24px;
-        line-height: 28.37px;
-        font-weight: 400;
-        margin-top: 10px;
-    }
-
-    .CP-item-2 {
-        margin-left: -12px;
-    }
-
-    .product-min {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 30px;
-    }
-    .product-min h1 {
-        font-size: 18px;
-        line-height: 22.77px;
-        font-weight: 500;
-        margin-bottom: 0px;
-    }
-    .hide-desktop{
-        display: inherit;
-    }
-    .product-min-1 {
-        width: 100%;
-        margin: 25px 0px;
-        margin-bottom: 0px;
-    }
-    .mbl-hide{
-        display: none;
-    }
-    #dashboard{
-        padding-bottom: 0px;
-    }
-
-    .mbl-footer{
-        background-color: #2E2F34;
-        height: 78px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: end;
-        text-align: center;
-        border-radius: 10px 10px 0px 0px;
-    }
 }
 
 
@@ -1826,5 +1601,49 @@ ul.nav.nav-tabs {
 @media screen  and (max-width:425px){
     .history-table table{
         width: 500px;
+    }
+}
+
+
+.referral-link h3 span{
+    font-size: 44px;
+    color: #ff8e00;
+}
+.referral-link h3{
+    font-size: 18px;
+    line-height: 54px;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.referral-link .link-box #link{
+    font-size: 14px;
+    color: #dadada;
+}
+.referral-link .link-box button{
+    background: none;
+    border: none;
+}
+.referral-link .link-box button span{
+    color: #ff8e00;
+    
+}
+
+
+@media screen and (max-width:425px) {
+    .P-left .left-item img{
+        width: 50px;
+        height: 50px;
+    }
+    .user-name{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .left-item button{
+        width: auto;
+        height: 20px;
+    }
+    .P-right h3{
+        font-size: 16px;
     }
 }

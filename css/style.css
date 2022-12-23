@@ -312,8 +312,7 @@ button.P-Right-btn {
 #sidebar {
     background: #242529;
     padding-bottom: 17px;
-    width: 30%;
-    height: 510px;
+    height: auto;
     border-radius: 20px;
     box-sizing: border-box;
 }
@@ -366,7 +365,7 @@ div#sidebar p img {
     height: 100%;
 }
 
-.M-active {
+.machin-profit .M-active {
     background-image: url(../images/dashboard/single-line.png);
     background-position: center;
     background-size: cover;
@@ -548,9 +547,8 @@ button.tl-btn-3 {
 }
 
 .navigation{
-
     display: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
 }
@@ -583,7 +581,7 @@ span{
     padding: 0% 15%;
 }
 
-#login-page, #register-page, #withdraw, #payment-method, #transaction, #dashboard{
+#login-page, #register-page, #withdraw, #payment-method, #transaction, #dashboard, #profile{
     background: url(../images/dashboard-bg.png), #141213;
     
     background-position: center;
@@ -1008,10 +1006,6 @@ span.referral-bg {
 .width100{
     width: 100%;
 }
-textarea {
-    background-color: #1A1C1E;
-    border: 1px solid #1A1C1E;
-}
 form.PI-edit {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -1266,6 +1260,24 @@ ul.nav.nav-tabs {
 
 
 /* New styles for pages */
+.form-control{
+    margin: 0;
+    background: #301c03;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    transition: .5s;
+    position: relative;
+    color: white;
+    padding-left: 10px;
+}
+.form-control:focus{
+    background: #301c03;
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
 .login-form .input-group .form-control{
     margin: 0;
     background: #301c03;
@@ -1645,5 +1657,188 @@ ul.nav.nav-tabs {
     }
     .P-right h3{
         font-size: 16px;
+    }
+}
+
+#profile form{
+    margin-top: 30px;
+}
+
+#profileTab{
+    margin-top: 50px;
+}
+#profileTab .nav-link{
+    border-radius: 5px;
+    background: #1F1F21;
+    margin: 10px;
+    border: none;
+}
+#profileTab .nav-link.active{
+    background: #ff8e00;
+}
+
+#section70 .wallet{
+    background-image: url(../images/dashboard/small-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px 40px;
+    border-radius: 10px;
+    position: relative;
+}
+#section70 .wallet h3{
+    font-size: 15px;
+    margin-bottom:10px;
+}
+#section70 .wallet h2{
+    font-size: 28px;
+    font-style: italic;
+}
+#section70 .wallet .WM-item h3{
+    font-size: 12px;
+}
+#section70 .wallet .WM-item h2{
+    font-size: 18px;
+}
+#section70 .wallet .withdraw-btn{
+    margin-top: 0px;
+    padding: 8px 50px;
+    border-radius: 40px;
+    border: none;
+    background: #ff8e00;
+    line-height: 30px;
+    color: white;
+    font-weight: 600;
+}
+#section70 .wallet .withdraw-btn img{
+    margin-right: 10px;
+    margin-top: -5px;
+}
+#section70 .wallet .wallet-middle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+#section70 .wallet .wallet-middle .WM-item .WM-btn{
+    color: #ccc;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 4px;
+    background: #333;
+}
+
+#section70 .wallet .wallet-right{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.dash-machin-profit .M-active, .dash-machin-profit .C-profit{
+    background-image: url(../images/dashboard/single-line.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.dash-machin-profit .M-active .dots, .dash-machin-profit .C-profit .dots{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+.dash-machin-profit .M-active .MP-item-1, .dash-machin-profit .C-profit .CP-item-1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.dash-machin-profit .M-active .MP-item-1 h2, .dash-machin-profit .C-profit .CP-item-1 h2{
+    font-size: 22px;
+    font-style: italic;
+    letter-spacing: 1.2px;
+    color: #ff8e00;
+}
+.dash-machin-profit .M-active .MP-item-1 h3, .dash-machin-profit .C-profit .CP-item-1 h3{
+    font-size: 14px;
+}
+
+.product-min {
+    background-color: #242529;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    overflow-x: hidden;
+    padding: 20px 10px;
+}
+.your-machine h1{
+    margin-top: 45px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.product-min-1{
+    background-color: #44454a;
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+    width: 48%;
+    margin: 10px 0px 0px 10px;
+}
+.PM-item-1{
+    float: left;
+    display: flex;
+}
+.PM-item-1 h5 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.7px;
+    margin-bottom: 0px;
+}
+.PM-item-1 span {
+    font-size: 8px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 10.12px;
+}
+.PM-item-1 p {
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 10.12px;
+    margin-bottom: 10px;
+}
+.PM-item-1 .product-img img {
+    width: 90%;
+    margin-right: 15px;
+}
+
+@media screen and (max-width:768px){
+    .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .tab-hide{
+        display: none;
+    }
+}
+@media screen and (max-width:425px) {
+    .navigation{
+        display: flex;
+    }
+    .product-min-1{
+        width: 100%;
+        margin-left: 0;
+    }
+    .PM-item-1{
+        float: unset;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .PM-item-1 .product-img img {
+        width: 100%;
     }
 }

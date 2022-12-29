@@ -1296,10 +1296,9 @@ ul.nav.nav-tabs {
 .form-check-input:focus{
     outline: none;
     box-shadow: none;
-    border: none;
 }
 .form-check-input:checked{
-    background: #ff8e00;
+    background-color: #ff8e00;
     border-color: #FF8E00;
     outline: none;
     box-shadow: none;
